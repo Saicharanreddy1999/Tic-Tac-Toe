@@ -1,0 +1,39 @@
+button
+{
+   
+    height: 120px;
+    width: 350px;
+    font-size: 80px;
+}
+
+p
+{
+    visibility:hidden;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color:burlywood;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 250px;
+    font-size: 17px;
+  }
+
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s;
+  }
+  
+  @keyframes fadein {
+    from {top: 0px; opacity: 0;}
+    to {top: 250px; opacity: 1;}
+  }
+
